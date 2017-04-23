@@ -1,4 +1,24 @@
+@import "http://fonts.fontstorage.com/import/gilroy.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "Gilroy", sans-serif;
+}
+
+h1 	{
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: auto;
+	color: black;
+}
+
+h2 {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: auto;
+	color: black;
 }
