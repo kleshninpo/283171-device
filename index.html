@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс - главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
@@ -114,15 +113,15 @@
           <ul class="feature__list">
             <li class="feature__list-item">
               <span class="feature-name">8,5 м</span>
-              <p>Длина палки</p>
+              <span class="feature-name__sub">Длина палки</span>
             </li>
             <li class="feature__list-item">
               <span class="feature-name">5 кг</span>
-              <p>Вес палки</p>
+              <span class="feature-name__sub">Вес палки</span>
             </li>
             <li class="feature__list-item">
               <span class="feature-name">Карбон</span>
-              <p>Материал</p>
+              <span class="feature-name__sub">Материал</span>
             </li>
           </ul>
   				</div>
@@ -154,7 +153,7 @@
   				<ul class="feature__list">
             <li class="feature__list-item">
              <span class="feature-name">48 часов</span>
-             <p>Без подзарядки</p>
+             <span class="feature-name__sub">Без подзарядки</span>
             </li>
           </ul>
           </div>
@@ -186,11 +185,11 @@
           <ul class="feature__list">
             <li class="feature__list-item">
              <span class="feature-name">800 м</span>
-             <p>Дальность полета</p>
+             <span class="feature-name__sub">Дальность полета</span>
             </li>
             <li class="feature__list-item">
               <span class="feature-name">50 м</span>
-              <p>Радиус поражения</p>
+              <span class="feature-name__sub">Радиус поражения</span>
             </li>
           </ul>
 
@@ -234,8 +233,8 @@
               <a href="#">ГАРАНТИЯ</a>
             </li>
   					<li>
-              <a href="#">КРЕДИТ</</a>
-            li>
+              <a href="#">КРЕДИТ</a>
+            </li>
   				</ul>
 
   			<div class="service-item">
@@ -296,11 +295,9 @@
   			<p>
   				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
   			</p>
-        <div class="img-container">
   			 <a href="#">
           <img src="img/map.jpg" alt="Adress on map: Stroiteley st., 15" width="560" height="225">
          </a>
-        </div>
   			<a href="#" class="btn">Напишите нам</a>
   		</div>
   	</main>
@@ -363,6 +360,8 @@
 
             <label for="message">Текст письма:</label>
             <textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+
+            <button type="submit" class="btn">Отправить</button>
           </form>
 
           <div class="close-window"></div>
