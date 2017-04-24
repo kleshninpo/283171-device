@@ -2,204 +2,241 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс - главная</title>
-    <link rel="stylesheet" href="../283171-device/css/main.css">
+    <title>Девайс - главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-  	<header class="header-main">
-  		<a href="#" class="logo">DEVICE</a>
-  		<form>
-  			<input type="search" placeholder="Поиск по сайту">
-  		</form>
+  	<header class="page-header">
+      <div class="container">
 
-  		<div class="user-actions">
-  			<div class="login">
-  				<span>Войти</span>
-  			</div>
-  			<div class="compare">
-  				<a href="#">Сравнить</a>
-  			</div>
-  			<div class="shop-cart">
-  				<a href="#">Корзина</a>
-  			</div>
-  		</div>
+        <a class="page-header__logo">DEVICE</a>
+        <section class="page-header__user-actions">
+          <div class="user-actions-left">
+            <form class="search-form">
+              <input type="search" placeholder="Поиск по сайту">
+            </form>
+          </div>
 
-  		<nav class="main-nav">
-  			<ul>
-  				<li>
-  					<a href="#">КАТАЛОГ ТОВАРОВ</a>
-  					<ul class="sub-nav-catalog">
-  						<li>
-  							<a href="#">
-  								Виртуальная реальность
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#">
-  								Моноподы для селфи
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#">
-  								Экшн-камеры
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#">
-  								Фитнес-браслеты
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#">
-  								Умные часы
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#">
-  								Квадрокоптеры
-  							</a>
-  						</li>
-  					</ul>
-  				</li>
-  				<li>
-  					<a href="#">ДОСТАВКА</a>
-  				</li>
-  				<li>
-  					<a href="#">ГАРАНТИЯ</a>
-  				</li>
-  				<li>
-  					<a href="#">КОНТАКТЫ</a>
-  				</li>
-  			</ul>
-  		</nav>
+          <ul class="user-actions-right__list">
+            <li class="user-actions__item">
+              <a href="#">Войти</a>
+            </li>
+            <li class="user-actions__item">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="user-actions__item">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </section>
+
+  		  <nav class="page-header__menu">
+  			 <ul class="page-header__menu-list">
+  				  <li class="page-header__menu-item active">
+  					 <a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+              <ul class="sub-nav-catalog">
+                <li>
+                  <a href="#">
+                    Виртуальная реальность
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Моноподы для селфи
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Экшн-камеры
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Фитнес-браслеты
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Умные часы
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Квадрокоптеры
+                  </a>
+                </li>
+              </ul>
+  				  </li>
+  				  <li class="page-header__menu-item">
+  					 <a href="#">ДОСТАВКА</a>
+  				  </li>
+  				  <li class="page-header__menu-item">
+  					 <a href="#">ГАРАНТИЯ</a>
+  				  </li>
+  				  <li class="page-header__menu-item">
+  					 <a href="#">КОНТАКТЫ</a>
+  				  </li>
+  			 </ul>
+  		  </nav>
+      </div>
   	</header>
 
   	<main>
   		<div class="slides-block">
   			<ul class="slides-list">
-  				<li></li>
-  				<li></li>
-  				<li></li>
+  				<li class="slides-list__item"></li>
+  				<li class="slides-list__item"></li>
+  				<li class="slides-list__item"></li>
   			</ul>
 
-  			<div class="active item-description">
-  				<img src="#" alt="selfie-pod" width="400" height="500">
-  				<h1>Делай селфи,<br />
-  				как Бен Стиллер!</h1> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
+  			<div class="item-description active">
+  				<div class="img-container">
+            <img src="img/slider-1.png" alt="selfie-pod" width="385" height="485">
+          </div>
+          <div class="item-description__text">
+  				<h2>Делай селфи,
+  				как Бен Стиллер!</h2> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
   				<p>
   					Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
   				</p>
 
-  				<a href="#" class="btn">ПОДРОБНЕЕ</a>
+  				<div class="slider-control">
+            <a href="#" class="btn narrow">ПОДРОБНЕЕ</a>
 
-  				<div class="feature">
-  					<span class="feature-name">8,5 м</span>
-  					<p>
-  						Длина палки
-  					</p>
-  				</div>
-  				<div class="features">
-  					<span class="feature-name">5 кг</span>
-  					<p>
-  						Вес палки
-  					</p>
-  				</div>
-  				<div class="features">
-  					<span class="feature-name">Карбон</span>
-  					<p>
-  						Материал
-  					</p>
+            <ul class="slider-switch__list">
+              <li class="slider-switch__list-item"></li>
+              <li class="slider-switch__list-item"></li>
+              <li class="slider-switch__list-item"></li>
+            </ul>
+          </div>
+
+          <ul class="feature__list">
+            <li class="feature__list-item">
+              <span class="feature-name">8,5 м</span>
+              <p>Длина палки</p>
+            </li>
+            <li class="feature__list-item">
+              <span class="feature-name">5 кг</span>
+              <p>Вес палки</p>
+            </li>
+            <li class="feature__list-item">
+              <span class="feature-name">Карбон</span>
+              <p>Материал</p>
+            </li>
+          </ul>
   				</div>
   			</div>
 
   			<div class="item-description">
-  				<img src="#" alt="fitness-clock" width="400" height="500">
-  				<h1>
-  					Худеем<br />
+  				<div class="img-container">
+            <img src="img/slider-2.png" alt="fitness-clock" width="345" height="485">
+          </div>
+          <div class="item-description__text">
+  				<h2>
+  					Худеем
   					правильно!
-  				</h1> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
+  				</h2> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
   				<p>
   				Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.
   				</p>
 
-  				<a href="#" class="btn">ПОДРОБНЕЕ</a>
+  				<div class="slider-control">
+            <a href="#" class="btn narrow">ПОДРОБНЕЕ</a>
 
-  				<div class="feature">
-  					<span class="feature-name">48 часов</span>
-  					<p>
-  						Без подзарядки
-  					</p>
-  				</div>
+            <ul class="slider-switch__list">
+              <li class="slider-switch__list-item"></li>
+              <li class="slider-switch__list-item"></li>
+              <li class="slider-switch__list-item"></li>
+            </ul>
+          </div>
+
+  				<ul class="feature__list">
+            <li class="feature__list-item">
+             <span class="feature-name">48 часов</span>
+             <p>Без подзарядки</p>
+            </li>
+          </ul>
+          </div>
   			</div>
 
   			<div class="item-description">
-  				<img src="#" alt="copter" width="400" height="500">
-  				<h1>
-  					Порхает как бабочка,<br />
+  				<div class="img-container">
+            <img src="img/slider-3.png" alt="copter" width="525" height="335">
+          </div>
+          <div class="item-description__text">
+  				<h2>
+  					Порхает как бабочка,
   					жалит как пчела
-  				</h1> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
+  				</h2> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
   				<p>
   					Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.
   				</p>
 
-  				<a href="#" class="btn">ПОДРОБНЕЕ</a>
+          <div class="slider-control">
+            <a href="#" class="btn narrow">ПОДРОБНЕЕ</a>
 
-  				<div class="feature">
-  					<span class="feature-name">800 м</span>
-  					<p>
-  						Дальность полета
-  					</p>
-  				</div>
-  				<div class="feature">
-  					<span class="feature-name">50 м</span>
-  					<p>
-  						Радиус поражения
-  					</p>
-  				</div>
+            <ul class="slider-switch__list">
+              <li class="slider-switch__list-item"></li>
+              <li class="slider-switch__list-item"></li>
+              <li class="slider-switch__list-item"></li>
+            </ul>
+          </div>
+
+          <ul class="feature__list">
+            <li class="feature__list-item">
+             <span class="feature-name">800 м</span>
+             <p>Дальность полета</p>
+            </li>
+            <li class="feature__list-item">
+              <span class="feature-name">50 м</span>
+              <p>Радиус поражения</p>
+            </li>
+          </ul>
+
+  			 </div>	
   			</div>
   		</div>
 
   		<div class="popular">
   			<div class="popular-item">
-  				<div class="item-thumb"></div>
-  				<p>Виртуальная реальность</p>
+  				<a href="#">Виртуальная реальность</a>
   			</div>
 
   			<div class="popular-item">
-  				<div class="item-thumb"></div>
-  				<p>Моноподы для селфи</p>
+  				<a href="#">Моноподы для селфи</a>
   			</div>
 
   			<div class="popular-item">
-  				<div class="item-thumb"></div>
-  				<p>Экшн-камеры</p>
+  				<a href="#">Экшн-камеры</a>
   			</div>
 
   			<div class="popular-item">
-  				<div class="item-thumb"></div>
-  				<p>Фитнес-браслеты</p>
+  				<a href="#">Фитнес-браслеты</a>
   			</div>
 
   			<div class="popular-item">
-  				<div class="item-thumb"></div>
-  				<p>Умные часы</p>
+  				<a href="#">Умные часы</a>
   			</div>
 
   			<div class="popular-item">
-  				<div class="item-thumb"></div>
-  				<p>Квадрокоптеры</p>
+  				<a href="#">Квадрокоптеры</a>
   			</div>
   		</div>
 
 
-  		<section class="services">
-  			<nav class="services-menu">
-  				<ul>
-  					<li class="active">ДОСТАВКА</li>
-  					<li>ГАРАНТИЯ</li>
-  					<li>КРЕДИТ</li>
+  		<div class="services">
+  				<ul class="services-menu__list">
+  					<li class="active">
+              <a href="#">ДОСТАВКА</a>
+            </li>
+  					<li>
+              <a href="#">ГАРАНТИЯ</a>
+            </li>
+  					<li>
+              <a href="#">КРЕДИТ</</a>
+            li>
   				</ul>
-  			</nav>
 
   			<div class="service-item">
   				<h2>Доставка</h2>
@@ -221,16 +258,24 @@
   					Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
   				</p>
   			</div>
-  		</section>
-
-  		<div class="partners">
-  			<img src="#" alt="dji" width="260" height="120">
-  			<img src="#" alt="sp gadgets" width="260" height="120">
-  			<img src="#" alt="goPro" width="260" height="120">
-  			<img src="#" alt="vive" width="260" height="120">
   		</div>
 
-  		<div class="about-us half-width">
+  		<div class="partners">
+  			<a href="#" class="img-container">
+          <img src="img/logo-1.png" alt="dji" width="260" height="120">
+        </a>
+  			<a href="#" class="img-container">
+          <img src="img/logo-2.png" alt="sp gadgets" width="260" height="120">
+        </a>
+  			<a href="#" class="img-container">
+          <img src="img/logo-3.png" alt="goPro" width="260" height="120">
+        </a>
+  			<a href="#" class="img-container">
+          <img src="img/logo-4.png" alt="vive" width="260" height="120">
+        </a>
+  		</div>
+
+  		<div class="about-us">
   			<h2>О нас</h2>
   			<p>
   				Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -238,72 +283,89 @@
   			<p>
   				Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:	
   			</p>
-  			<ul>
-  				<li>Деловые Линии</li>
-  				<li>Автотрейдинг</li>
-  				<li>ЖелДорЭкспедиция</li>
+  			<ul class="delivery-partners__list">
+  				<li class="delivery-partners__list-item">Деловые Линии</li>
+  				<li class="delivery-partners__list-item">Автотрейдинг</li>
+  				<li class="delivery-partners__list-item">ЖелДорЭкспедиция</li>
   			</ul>
   			<a href="#" class="btn">Подробнее о нас</a>
   		</div>
 
-  		<div class="contacts half-width">
+  		<div class="contacts">
   			<h2>Контакты</h2>
   			<p>
   				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
   			</p>
-  			<img src="#" alt="Adress on map: Stroiteley st., 15" width="560" height="225">
+        <div class="img-container">
+  			 <a href="#">
+          <img src="img/map.jpg" alt="Adress on map: Stroiteley st., 15" width="560" height="225">
+         </a>
+        </div>
   			<a href="#" class="btn">Напишите нам</a>
-  			<div class="popup-form">
-  				<form action="#">
-  					<label for="name">Ваше имя:</label>
-  					<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-
-  					<label for="email">Ваш e-mail:</label>
-  					<input type="text" name="email" id="email" placeholder="Для отправки ответа">
-
-  					<label for="message">Текст письма:</label>
-  					<textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
-  				</form>
-
-  				<div class="close-window"></div>
-  			</div>
   		</div>
   	</main>
 
-  	<footer class="footer-main">
-  		<div class="footer-logo">
+  	<footer class="page-footer">
+  		<div class="page-footer__logo">
   			<a href="#" class="logo">DEVICE</a>
-  			<p>г. Москва, ул. Строителей, 15</p>
+        <div class="page-footer__adress">
+          <p>г. Москва, ул. Строителей, 15</p>
+        </div>
   		</div>
 
-  		<nav class="footer-menu">
-  			<ul>
-  				<li><a href="#">ДОСТАВКА</a></li>
-  				<li><a href="#">ГАРАНТИЯ</a></li>
-  				<li><a href="#">КОНТАКТЫ</a></li>
+  		<nav class="page-footer__menu">
+  			<ul class="page-footer__menu-list">
+  				<li class="page-footer__menu-item"><a href="#">ДОСТАВКА</a></li>
+  				<li class="page-footer__menu-item"><a href="#">ГАРАНТИЯ</a></li>
+  				<li class="page-footer__menu-item"><a href="#">КОНТАКТЫ</a></li>
   			</ul>
   		</nav>
 
-  		<div class="footer-user-actions user-actions">
-  			<div class="login">
+  		<div class="page-footer__user-actions">
+  			<div class="page-footer__login">
   				<span>Войти</span>
   			</div>
-  			<div class="compare">
+  			<div class="page-footer__compare">
   				<a href="#">Сравнить</a>
   			</div>
-  			<div class="shop-cart">
+  			<div class="page-footer__shop-cart">
   				<a href="#">Корзина</a>
   			</div>
-  			<p>Тел.: +7(495)495-95-95</p>
+  			<div class="page-footer__phone">
+          <p>Тел.: +7(495)495-95-95</p>
+        </div>
   		</div>
 
-  		<div class="social">
-  			<div class="fb"></div>
-  			<div class="inst"></div>
-  			<div class="twit"></div>
-  		</div>
+  		<div class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="social vk">
+            <a href="#"></a>
+          </li>
+          <li class="social fb">
+            <a href="#"></a>
+          </li>
+          <li class="social inst">
+            <a href="#"></a>
+          </li>
+        </ul>
+      </div>
 
   		<a href="#" class="htmlacademy-logo"></a>
   	</footer>
+
+    <div class="popup-form">
+          <form action="#">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+
+            <label for="email">Ваш e-mail:</label>
+            <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+          </form>
+
+          <div class="close-window"></div>
+        </div>
   </body>
 </html>
