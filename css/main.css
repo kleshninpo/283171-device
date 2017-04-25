@@ -1,5 +1,13 @@
-@import "http://fonts.fontstorage.com/import/gilroy.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/gilroy/Gilroyextrabold.ttf"),
+			 url("../fonts/gilroy/Gilroylight.ttf");
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/open_sans/OpenSans-Regular.ttf"),
+			 url("../fonts/open_sans/OpenSans-Light.ttf");
+}
 
 body {
 	margin: 0 auto;
