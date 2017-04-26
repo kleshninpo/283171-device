@@ -35,32 +35,38 @@
   				  <li class="page-header__menu-item active">
   					 <a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
               <ul class="sub-nav-catalog">
-                <li>
+                <li class="sub-nav-catalog-item">
                   <a href="#">
                     Виртуальная реальность
                   </a>
                 </li>
-                <li>
+                <li class="sub-nav-catalog-item">
                   <a href="#">
                     Моноподы для селфи
                   </a>
                 </li>
-                <li>
+                <li class="sub-nav-catalog-item">
                   <a href="#">
                     Экшн-камеры
                   </a>
                 </li>
-                <li>
+              </ul>
+
+              <ul class="sub-nav-catalog">
+                <li class="sub-nav-catalog-item">
                   <a href="#">
                     Фитнес-браслеты
                   </a>
                 </li>
-                <li>
+                <li class="sub-nav-catalog-item">
                   <a href="#">
                     Умные часы
                   </a>
                 </li>
-                <li>
+              </ul>
+
+              <ul class="sub-nav-catalog">
+                <li class="sub-nav-catalog-item">
                   <a href="#">
                     Квадрокоптеры
                   </a>
@@ -303,37 +309,49 @@
   	</main>
 
   	<footer class="page-footer">
-  		<div class="page-footer__logo">
-  			<a href="#" class="logo">DEVICE</a>
+      <div class="page-footer__first-row">
+        <div class="page-footer__logo">
+          <a href="#" class="logo">DEVICE</a>
+        </div>
+
+        <ul class="page-footer__user-actions-list">
+          <li class="page-footer__user-actions-list-item">
+            <a href="#">Войти</a>
+          </li>
+          <li class="page-footer__user-actions-list-item">
+            <a href="#">Сравнить</a>
+          </li>
+          <li class="page-footer__user-actions-list-item">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__second-row">
         <div class="page-footer__adress">
           <p>г. Москва, ул. Строителей, 15</p>
         </div>
-  		</div>
 
-  		<nav class="page-footer__menu">
-  			<ul class="page-footer__menu-list">
-  				<li class="page-footer__menu-item"><a href="#">ДОСТАВКА</a></li>
-  				<li class="page-footer__menu-item"><a href="#">ГАРАНТИЯ</a></li>
-  				<li class="page-footer__menu-item"><a href="#">КОНТАКТЫ</a></li>
-  			</ul>
-  		</nav>
+        <ul class="page-footer__menu-list">
+          <li class="page-footer__menu-item">
+            <a href="#">ДОСТАВКА</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a href="#">ГАРАНТИЯ</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a href="#">КОНТАКТЫ</a>
+          </li>
+        </ul>
 
-  		<div class="page-footer__user-actions">
-  			<div class="page-footer__login">
-  				<span>Войти</span>
-  			</div>
-  			<div class="page-footer__compare">
-  				<a href="#">Сравнить</a>
-  			</div>
-  			<div class="page-footer__shop-cart">
-  				<a href="#">Корзина</a>
-  			</div>
-  			<div class="page-footer__phone">
+        <div class="page-footer__phone">
           <p>Тел.: +7(495)495-95-95</p>
         </div>
-  		</div>
+      </div>
 
-  		<div class="page-footer__social">
+      <div class="page-footer__third-row">
+        <div class="page-footer__line"></div>
+
         <ul class="page-footer__social-list">
           <li class="social vk">
             <a href="#"></a>
@@ -345,26 +363,26 @@
             <a href="#"></a>
           </li>
         </ul>
-      </div>
 
-  		<a href="#" class="htmlacademy-logo"></a>
-  	</footer>
+        <a href="https://htmlacademy.ru/" class="htmlacademy-logo"></a>
+      </div>
+    </footer>
 
     <div class="popup-form">
-          <form action="#">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      <form action="#">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
 
-            <label for="email">Ваш e-mail:</label>
-            <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
 
-            <label for="message">Текст письма:</label>
-            <textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
 
-            <button type="submit" class="btn">Отправить</button>
-          </form>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
 
-          <div class="close-window"></div>
-        </div>
+      <div class="close-window"></div>
+    </div>
   </body>
 </html>
