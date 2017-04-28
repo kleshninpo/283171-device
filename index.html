@@ -7,85 +7,88 @@
   </head>
   <body>
   	<header class="page-header">
-      <div class="container">
+      <a class="page-header__logo">DEVICE</a>
 
-        <a class="page-header__logo">DEVICE</a>
-        <section class="page-header__user-actions">
-          <div class="user-actions-left">
+      <div class="page-header__container">
+        <section class="page-header__left">
+
+          <div class="search">
             <form class="search-form">
               <input type="search" placeholder="Поиск по сайту">
             </form>
           </div>
 
-          <ul class="user-actions-right__list">
-            <li class="user-actions__item">
+          <div class="goods-catalog">
+            <h3>
+              <a href="catalog.html">Каталог товаров</a>
+            </h3>
+            <ul class="sub-nav">
+              <li class="sub-nav__catalog-item">
+                <a href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+              <li class="sub-nav__catalog-item">
+                <a href="#">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="sub-nav__catalog-item">
+                <a href="#">
+                  Квадрокоптеры
+                </a>
+              </li>
+
+              <li class="sub-nav__catalog-item">
+                <a href="#">
+                  Моноподы для селфи
+                </a>
+              </li>
+              <li class="sub-nav__catalog-item">
+                <a href="#">
+                  Умные часы
+                </a>
+              </li>
+
+              <li class="sub-nav__catalog-item">
+                <a href="#">
+                  Экшн-камеры
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="page-header__right">
+
+          <ul class="user-actions__list">
+            <li class="user-actions__item login">
               <a href="#">Войти</a>
             </li>
-            <li class="user-actions__item">
+            <li class="user-actions__item goods">
               <a href="#">Сравнить</a>
             </li>
-            <li class="user-actions__item">
+            <li class="user-actions__item goods">
               <a href="#">Корзина</a>
             </li>
           </ul>
+
+          <nav class="page-header__menu">
+            <ul class="page-header__menu-list">
+              <li class="page-header__menu-item">
+                <a href="#">ДОСТАВКА</a>
+              </li>
+              <li class="page-header__menu-item">
+                <a href="#">ГАРАНТИЯ</a>
+              </li>
+              <li class="page-header__menu-item">
+                <a href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
         </section>
-
-  		  <nav class="page-header__menu">
-  			 <ul class="page-header__menu-list">
-  				  <li class="page-header__menu-item active">
-  					 <a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
-              <ul class="sub-nav-catalog">
-                <li class="sub-nav-catalog-item">
-                  <a href="#">
-                    Виртуальная реальность
-                  </a>
-                </li>
-                <li class="sub-nav-catalog-item">
-                  <a href="#">
-                    Моноподы для селфи
-                  </a>
-                </li>
-                <li class="sub-nav-catalog-item">
-                  <a href="#">
-                    Экшн-камеры
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="sub-nav-catalog">
-                <li class="sub-nav-catalog-item">
-                  <a href="#">
-                    Фитнес-браслеты
-                  </a>
-                </li>
-                <li class="sub-nav-catalog-item">
-                  <a href="#">
-                    Умные часы
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="sub-nav-catalog">
-                <li class="sub-nav-catalog-item">
-                  <a href="#">
-                    Квадрокоптеры
-                  </a>
-                </li>
-              </ul>
-  				  </li>
-  				  <li class="page-header__menu-item">
-  					 <a href="#">ДОСТАВКА</a>
-  				  </li>
-  				  <li class="page-header__menu-item">
-  					 <a href="#">ГАРАНТИЯ</a>
-  				  </li>
-  				  <li class="page-header__menu-item">
-  					 <a href="#">КОНТАКТЫ</a>
-  				  </li>
-  			 </ul>
-  		  </nav>
       </div>
-  	</header>
+    </header>
 
   	<main>
   		<div class="slides-block">
@@ -103,7 +106,7 @@
   				<h2>Делай селфи,
   				как Бен Стиллер!</h2> <!-- Стоит ли здесь делать заголовок, либо просто заголовочнй блок? -->
   				<p>
-  					Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+  					Самая длинная палка для селфи доступна в нашем магазине.<br /> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
   				</p>
 
   				<div class="slider-control">
@@ -232,14 +235,14 @@
 
   		<div class="services">
   				<ul class="services-menu__list">
-  					<li class="active">
-              <a href="#">ДОСТАВКА</a>
+  					<li class="services-menu__list-item">
+              <a href="#" class="btn">ДОСТАВКА</a>
             </li>
-  					<li>
-              <a href="#">ГАРАНТИЯ</a>
+  					<li class="services-menu__list-item">
+              <a href="#" class="btn">ГАРАНТИЯ</a>
             </li>
-  					<li>
-              <a href="#">КРЕДИТ</a>
+  					<li class="services-menu__list-item">
+              <a href="#" class="btn">КРЕДИТ</a>
             </li>
   				</ul>
 
@@ -345,7 +348,7 @@
         </ul>
 
         <div class="page-footer__phone">
-          <p>Тел.: +7(495)495-95-95</p>
+          <p>Тел.: +7(495) 495-95-95</p>
         </div>
       </div>
 
@@ -353,13 +356,13 @@
         <div class="page-footer__line"></div>
 
         <ul class="page-footer__social-list">
-          <li class="social vk">
-            <a href="#"></a>
-          </li>
           <li class="social fb">
             <a href="#"></a>
           </li>
           <li class="social inst">
+            <a href="#"></a>
+          </li>
+          <li class="social twitter">
             <a href="#"></a>
           </li>
         </ul>
@@ -370,14 +373,20 @@
 
     <div class="popup-form">
       <form action="#">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+        <div class="input-container">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+        </div>
 
-        <label for="email">Ваш e-mail:</label>
-        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+        <div class="input-container">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+        </div>
 
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+        <div class="input-container">
+          <label for="message">Текст письма:</label>
+          <textarea name="message" id="message" placeholder="В свободной форме" cols="105" rows="10"></textarea>
+        </div>
 
         <button type="submit" class="btn">Отправить</button>
       </form>
