@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Девайс - моноподы для селфи</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Девайс - моноподы для селфи</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">DEVICE</a>
+    <div class="page-container">
+    <header class="page-header page-header__catalog">
+      <a href="./index.html" class="page-header__logo">DEVICE</a>
 
       <div class="page-header__container">
         <section class="page-header__left">
@@ -15,12 +17,14 @@
           <div class="search">
             <form class="search-form">
               <input type="search" placeholder="Поиск по сайту">
+              <a href="#" class="search-btn">Найти</a>
             </form>
           </div>
 
           <div class="goods-catalog">
-            <h3>
-              <a href="catalog.html">Каталог товаров</a>
+            <h3 class="catalog-h__container">
+              <a href="catalog.html" class="
+              catalog-h">Каталог товаров</a>
             </h3>
             <ul class="sub-nav">
               <li class="sub-nav__catalog-item">
@@ -62,20 +66,23 @@
         <section class="page-header__right">
 
           <ul class="user-actions__list">
-            <li class="user-actions__item login">
-              <a href="#">Войти</a>
+            <li class="user-actions__item login active">
+              <a href="../profile.html" >Валентин Петухов</a>
             </li>
-            <li class="user-actions__item goods">
+            <li class="user-actions__item quit">
+              <a href="#">Выйти</a>
+            </li>
+            <li class="user-actions__item compare">
               <a href="#">Сравнить</a>
             </li>
-            <li class="user-actions__item goods">
+            <li class="user-actions__item cart">
               <a href="#">Корзина</a>
             </li>
           </ul>
 
           <nav class="page-header__menu">
             <ul class="page-header__menu-list">
-              <li class="page-header__menu-item">
+              <li class="page-header__menu-item active">
                 <a href="#">ДОСТАВКА</a>
               </li>
               <li class="page-header__menu-item">
@@ -89,9 +96,14 @@
         </section>
       </div>
     </header>
+    </div>
 
-  	<main>
-      <div class="container">
+
+
+    <main>
+    <div class="container">
+
+      <div class="page-container">
         <div class="breadcrumbs">
           <h1>
             Моноподы для селфи
@@ -108,42 +120,56 @@
             </li>
           </ul>
         </div>
+      
 
         <aside class="sidebar">
           <div class="sidebar-header">
             <h3>ФИЛЬТР:</h3>
           </div>
           <form class="sidebar-form">
-            <div class="fieldset">
+            <div class="fieldset range">
               <h3>Стоимость</h3>
               <input type="range">
+              <div class="range-field">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min">
+                    <span>От 0</span>
+                  </div>
+                  <div class="toggle toggle-max">
+                    <span>До 5000</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="fieldset">
               <h3>Цвет</h3>
               <input type="checkbox" id="black" checked>
-              <label for="black">Black</label>
+              <label for="black" class="checkbox-label">Black</label>
 
               <input type="checkbox" id="white">
-              <label for="white">White</label>
+              <label for="white" class="checkbox-label">White</label>
 
               <input type="checkbox" id="blue" checked>
-              <label for="blue">Blue</label>
+              <label for="blue" class="checkbox-label">Blue</label>
 
               <input type="checkbox" id="red" checked>
-              <label for="red">Red</label>
+              <label for="red" class="checkbox-label">Red</label>
 
               <input type="checkbox" id="pink">
-              <label for="pink">Pink</label>
+              <label for="pink" class="checkbox-label">Pink</label>
             </div>
 
             <div class="fieldset">
               <h3>Bluetooth</h3>
               <input type="radio" name="bluetooth" id="yes" checked>
-              <label for="yes">Есть</label>
+              <label for="yes" class="radio-label">Есть</label>
 
               <input type="radio" name="bluetooth" id="no">
-              <label for="no">Нет</label>
+              <label for="no" class="radio-label">Нет</label>
             </div>
 
             <button type="submit" class="btn" >Показать</button>
@@ -154,7 +180,7 @@
           <div class="content-header">
             <h3>СОРТИРОВКА</h3>
             <ul class="sort__list">
-              <li class="sort__list-item"><a href="#">По цене</a></li>
+              <li class="sort__list-item active"><a href="#">По цене</a></li>
               <li class="sort__list-item"><a href="#">По типу</a></li>
               <li class="sort__list-item"><a href="#">По популярности</a></li>
             </ul>
@@ -170,43 +196,59 @@
           </div>
 
           
-
           <div class="items-block">
             <article class="item">
               <div class="img-container">
+                <div class="img__hover-block">
+                  <button type="button" class="btn">В корзину</button>
+                  <button type="button" class="compare-button">Добавить к сравнению</button>
+                </div>
                 <img src="img/item-1.jpg" alt="dilletant-selfie-pod" width="360" height="380">
               </div>
               <h1>
-                <a href="">Любительская селфи-палка</a>
+                <a href="./dilletant-selfie-pod.html">Любительская селфи-палка</a>
               </h1>
               <span>500 руб.</span>
             </article>
 
             <article class="item">
               <div class="img-container">
+                <div class="img__hover-block">
+                  <button type="button" class="btn">В корзину</button>
+                  <button type="button" class="compare-button">Добавить к сравнению</button>
+                </div>
                 <img src="img/item-2.jpg" alt="prof-selfie-pod" width="360" height="380">
               </div>
               <h1>
-                <a href="">Профессиональная <br /> селфи-палка</a>
+                <a href="./prof-selfie-pod.html">Профессиональная <br /> селфи-палка</a>
               </h1>
               <span>1500 руб.</span>
             </article>
 
             <article class="item">
               <div class="img-container">
+                <div class="img__hover-block">
+                  <button type="button" class="btn">В корзину</button>
+                  <button type="button" class="compare-button">Добавить к сравнению</button>
+                </div>
                 <img src="img/item-3.jpg" alt="underwater-selfie-pod" width="360" height="380">
               </div>
               <h1>
-                <a href="">Непотопляемая селфи-палка</a>
+                <a href="./underwater-selfie-pod.html">Непотопляемая селфи-палка</a>
               </h1>
               <span>2500 руб.</span>
             </article>
+
             <article class="item">
-              <div class="img-container">
+              <div class="img-container new">
+                <div class="img__hover-block">
+                  <button type="button" class="btn">В корзину</button>
+                  <button type="button" class="compare-button">Добавить к сравнению</button>
+                </div>
                 <img src="img/item-4.jpg" alt="go-to-me-selfie-pod" width="360" height="380">
               </div>
               <h1>
-                <a href="">Селфи-палка <br /> «Следуй за мной»</a>
+                <a href="./go-to-me-selfie-pod.html">Селфи-палка <br /> «Следуй за мной»</a>
               </h1>
               <span>4900 руб.</span>
             </article>
@@ -230,23 +272,26 @@
             </li>
           </ul>
         </section>
-      </div>
-  	</main>
+        </div>
+        </div>
+    </main>
 
-  	<footer class="page-footer">
+
+    <footer class="page-footer">
+      <div class="container">
       <div class="page-footer__first-row">
         <div class="page-footer__logo">
           <a href="#" class="logo">DEVICE</a>
         </div>
 
         <ul class="page-footer__user-actions-list">
-          <li class="page-footer__user-actions-list-item">
-            <a href="#">Войти</a>
+          <li class="page-footer__user-actions-list-item login">
+            <a href="#">Выйти</a>
           </li>
-          <li class="page-footer__user-actions-list-item">
+          <li class="page-footer__user-actions-list-item compare">
             <a href="#">Сравнить</a>
           </li>
-          <li class="page-footer__user-actions-list-item">
+          <li class="page-footer__user-actions-list-item cart">
             <a href="#">Корзина</a>
           </li>
         </ul>
@@ -270,7 +315,7 @@
         </ul>
 
         <div class="page-footer__phone">
-          <p>Тел.: +7(495)495-95-95</p>
+          <p>Тел.: +7 (495) 495-95-95</p>
         </div>
       </div>
 
@@ -278,18 +323,19 @@
         <div class="page-footer__line"></div>
 
         <ul class="page-footer__social-list">
-          <li class="social vk">
-            <a href="#"></a>
-          </li>
           <li class="social fb">
             <a href="#"></a>
           </li>
           <li class="social inst">
             <a href="#"></a>
           </li>
+          <li class="social twitter">
+            <a href="#"></a>
+          </li>
         </ul>
 
-        <a href="https://htmlacademy.ru/" class="htmlacademy-logo"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo"></a>
+      </div>
       </div>
     </footer>
 </body>
