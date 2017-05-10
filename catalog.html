@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
     <header class="page-header page-header__catalog">
-      <a href="./index.html" class="page-header__logo">DEVICE</a>
+      <a href="./index.html" class="page-header__logo catalog__logo">DEVICE</a>
 
       <div class="page-header__container">
         <section class="page-header__left">
@@ -96,14 +96,10 @@
         </section>
       </div>
     </header>
-    </div>
-
-
 
     <main>
     <div class="container">
 
-      <div class="page-container">
         <div class="breadcrumbs">
           <h1>
             Моноподы для селфи
@@ -128,7 +124,7 @@
           </div>
           <form class="sidebar-form">
             <div class="fieldset range">
-              <h3>Стоимость</h3>
+              <h3 class="sidebar__price-h">Стоимость</h3>
               <input type="range">
               <div class="range-field">
                 <div class="range-controls">
@@ -136,35 +132,35 @@
                     <div class="bar"></div>
                   </div>
                   <div class="toggle toggle-min">
-                    <span>От 0</span>
+                    <span>от 0</span>
                   </div>
                   <div class="toggle toggle-max">
-                    <span>До 5000</span>
+                    <span>до 5000</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="fieldset">
-              <h3>Цвет</h3>
+            <div class="fieldset checkbox">
+              <h3 class="sidebar__color-h">Цвет</h3>
               <input type="checkbox" id="black" checked>
-              <label for="black" class="checkbox-label">Black</label>
+              <label for="black" class="checkbox-label">Черный</label>
 
               <input type="checkbox" id="white">
-              <label for="white" class="checkbox-label">White</label>
+              <label for="white" class="checkbox-label">Белый</label>
 
               <input type="checkbox" id="blue" checked>
-              <label for="blue" class="checkbox-label">Blue</label>
+              <label for="blue" class="checkbox-label">Синий</label>
 
               <input type="checkbox" id="red" checked>
-              <label for="red" class="checkbox-label">Red</label>
+              <label for="red" class="checkbox-label">Красный</label>
 
               <input type="checkbox" id="pink">
-              <label for="pink" class="checkbox-label">Pink</label>
+              <label for="pink" class="checkbox-label">Розовый</label>
             </div>
 
             <div class="fieldset">
-              <h3>Bluetooth</h3>
+              <h3 class="sidebar__bluetooth-h">Bluetooth</h3>
               <input type="radio" name="bluetooth" id="yes" checked>
               <label for="yes" class="radio-label">Есть</label>
 
@@ -178,7 +174,7 @@
 
         <section class="content">
           <div class="content-header">
-            <h3>СОРТИРОВКА</h3>
+            <h3>СОРТИРОВКА:</h3>
             <ul class="sort__list">
               <li class="sort__list-item active"><a href="#">По цене</a></li>
               <li class="sort__list-item"><a href="#">По типу</a></li>
@@ -187,10 +183,10 @@
 
             <ul class="sort__btn-list">
               <li class="sort__btn-list-item">
-                <a href="#" class="sort-btn-up"></a>
+                <a href="#" class="sort-btn-down"></a>
               </li>
               <li class="sort__btn-list-item">
-                <a href="#" class="sort-btn-down"></a>
+                <a href="#" class="sort-btn-up"></a>
               </li>
             </ul>
           </div>
@@ -205,10 +201,12 @@
                 </div>
                 <img src="img/item-1.jpg" alt="dilletant-selfie-pod" width="360" height="380">
               </div>
-              <h1>
-                <a href="./dilletant-selfie-pod.html">Любительская селфи-палка</a>
-              </h1>
-              <span>500 руб.</span>
+              <div class="item__text">
+                <h1>
+                  <a href="./dilletant-selfie-pod.html">Любительская селфи-палка</a>
+                </h1>
+                <span>500 руб.</span>
+              </div>
             </article>
 
             <article class="item">
@@ -219,10 +217,12 @@
                 </div>
                 <img src="img/item-2.jpg" alt="prof-selfie-pod" width="360" height="380">
               </div>
-              <h1>
-                <a href="./prof-selfie-pod.html">Профессиональная <br /> селфи-палка</a>
-              </h1>
-              <span>1500 руб.</span>
+              <div class="item__text">
+                <h1>
+                  <a href="./prof-selfie-pod.html">Профессиональная <br /> селфи-палка</a>
+                </h1>
+                <span>1500 руб.</span>
+              </div>
             </article>
 
             <article class="item">
@@ -233,10 +233,12 @@
                 </div>
                 <img src="img/item-3.jpg" alt="underwater-selfie-pod" width="360" height="380">
               </div>
-              <h1>
-                <a href="./underwater-selfie-pod.html">Непотопляемая селфи-палка</a>
-              </h1>
-              <span>2500 руб.</span>
+              <div class="item__text">
+                <h1>
+                  <a href="./underwater-selfie-pod.html">Непотопляемая селфи-палка</a>
+                </h1>
+                <span>2500 руб.</span>
+              </div>
             </article>
 
             <article class="item">
@@ -247,10 +249,12 @@
                 </div>
                 <img src="img/item-4.jpg" alt="go-to-me-selfie-pod" width="360" height="380">
               </div>
-              <h1>
-                <a href="./go-to-me-selfie-pod.html">Селфи-палка <br /> «Следуй за мной»</a>
-              </h1>
-              <span>4900 руб.</span>
+              <div class="item__text">
+                <h1>
+                  <a href="./go-to-me-selfie-pod.html">Селфи-палка  «Следуй за<br /> мной»</a>
+                </h1>
+                <span>4900 руб.</span>
+              </div>
             </article>
           </div>
 
@@ -273,14 +277,13 @@
           </ul>
         </section>
         </div>
-        </div>
     </main>
-
+</div>
 
     <footer class="page-footer">
       <div class="container">
       <div class="page-footer__first-row">
-        <div class="page-footer__logo">
+        <div class="page-footer__logo catalog-logo">
           <a href="#" class="logo">DEVICE</a>
         </div>
 
