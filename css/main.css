@@ -156,7 +156,6 @@ main a {
 	padding: 0 60px 9px 60px;
 }
 
-
 .page-header::after {
 	content: "";
 	width: 100px;
@@ -192,8 +191,8 @@ main a {
 	padding: 0;
 	margin: 0 0 20px 0;
 	position: relative;
-	// justify-content: flex-end;
 }
+
 .user-actions__item {
 	font-family: "OpenSans", Arial, sans-serif;
 	font-size: 15px;
@@ -204,7 +203,7 @@ main a {
 	position: relative;
 }
 .user-actions__list .login {
-	/*margin-right: auto; /* Войти - влево -- не работает в ие*/
+	/*margin-right: auto;  Войти - влево -- не работает в ие*/
 	margin-left: 45px;
 	margin-right: 173px;
 }
